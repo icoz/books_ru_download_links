@@ -11,7 +11,7 @@ def get_links(fname):
 	out = []
 	for l in links:
 		h = l.attrib['href']
-		h = h.replace('.ru/member/download_agreement.php?back_url=/','.ru/')
+		h = h.replace('/member/download_agreement.php?back_url=/','http://www.books.ru/')
 		# print(h)
 		if h not in out:
 			out.append(h)
